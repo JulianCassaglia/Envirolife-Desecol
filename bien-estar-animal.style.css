@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgba(119, 27, 161, 90%);
+    height: 95px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 1px;
+    line-height: 30px;
+}
+
+.letra-logo {
+    padding: none;
+    list-style: none;
+}
+
+.nombre {
+    font-size: 40px;
+    padding-left: 25px;
+    width: max-content;
+}
+
+.subtitulo {
+    font-size:  15px;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px; 
+    list-style: none;
+}
+
+.nav_menu_item {
+    font-size: 18px;
+    margin: 0 20px;
+    line-height: 90px;
+    text-transform: uppercase;
+    width: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_menu_link {
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.nav_menu_link:hover {
+    background-color: rgb(154, 34, 209);
+    transition: 0.5s;
+    color: white;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+    display: none;
+}
+
+.toggle {
+    line-height: 90px;
+    margin-right: 30px;
+}
+
+@media (max-width: 1279px) {
+
+    .logo {
+        line-height: 20px;
+    }
+
+    .nombre {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .nav_link {
+        color: black;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        margin-right: 0px;
+        background-color: white;
+        position: fixed;
+        left: 0px;
+        top: 95px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-x: auto;
+        left: 100%;
+        transition: left 0.5s;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+}
+
+.bea-info {
+    background-color: rgba(119, 27, 161, 90%);
+    margin-top: 120px;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+.bea-title {
+    background-color: rgb(154, 34, 209);
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.bea-img-1 {
+    margin: 20px 30px;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.bea-pd {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(154, 34, 209);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.bea-parrafos-link {
+    color: white;
+}
+
+@media (max-width: 990px) {
+    .bea-img-1 {
+        justify-content: center;
+        display: block; 
+        margin:0 auto 0 auto;
+        margin-top: 10px;
+        margin-block-end: 10px;
+    }
+}
+
+.pqs {
+    background-color: rgba(119, 27, 161, 90%);
+    margin: 10px 10px;
+    border-radius: 15px;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pqs-title {
+    background-color: rgb(154, 34, 209);
+    padding: 20px 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.qps-img {
+    margin: 50px 50px;
+    padding: 20px 50px;
+    justify-content: center;
+    background-color: rgb(154, 34, 209);
+    border-radius: 15px;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.qps-img:hover {
+    background-color: rgba(255, 255, 255, 70%);
+    color: rgb(119, 27, 161);
+}
+
+.pqs-btn {
+    border: none;
+    background: none;
+}
+
+@media (max-width: 990px) {
+    .qps-img {
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+body {
+    background-image: url('fondo-ben.jpg');
+}
+
+.img-footer {
+    width: 400px;
+}
+
+.footer-content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(119, 27, 161);
+    color: white;
+}
+
+.info-footer {
+    padding: 80px 30px;
+}
+
+.fab-footer {
+    font-size: 30px;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.fab-footer:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+@media (max-width: 415px) {
+    .img-footer {
+        width: 300px;
+    }
+}
